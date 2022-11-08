@@ -14,10 +14,10 @@ mz07:
       - J5
       - J6
 
-    gains: # Required because we're controlling an effort interface
-      J1: {p: 1, i: 0, d: 0.0, i_clamp: 0}
-      J2: {p: 1, i: 0, d: 0.0, i_clamp: 0}
-      J3: {p: 1, i: 0, d: 0.0, i_clamp: 0}
-      J4: {p: 1, i: 0, d: 0.0, i_clamp: 0}
-      J5: {p: 1, i: 0, d: 0.0, i_clamp: 0}
-      J6: {p: 1, i: 0, d: 0.0, i_clamp: 0}
+    # gains: # Required because we're controlling an effort interface
+    #   J1: {p: 100, i: 10, d: 5.0, i_clamp: 100}
+    #   J2: {p: 1000, i: 500, d: 100.0, i_clamp: 100}
+    #   J3: {p: 100, i: 10, d: 0.0, i_clamp: 100}
+    #   J4: {p: 100, i: 10, d: 0.0, i_clamp: 100}
+    #   J5: {p: 10, i: 1, d: 0.0, i_clamp: 100}
+    #   J6: {p: 10, i: 1, d: 0.0, i_clamp: 100}

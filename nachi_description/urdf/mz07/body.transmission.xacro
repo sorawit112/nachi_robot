@@ -4,16 +4,16 @@
   <xacro:macro name="simple_jp_trans_v0" params="name
 												 joint_name actuator_name
 												 reduction">
-	<transmission name="${name}">
-      <type>transmission_interface/SimpleTransmission</type>
-      <joint name="${joint_name}">
-		<hardwareInterface>PositionJointInterface</hardwareInterface>
-      </joint>
-      <actuator name="${actuator_name}">
-		<hardwareInterface>PositionJointInterface</hardwareInterface>
-		<mechanicalReduction>${reduction}</mechanicalReduction>
-      </actuator>
-	</transmission>
+      <transmission name="${name}">
+         <type>transmission_interface/SimpleTransmission</type>
+         <joint name="${joint_name}">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+         </joint>
+         <actuator name="${actuator_name}">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>${reduction}</mechanicalReduction>
+         </actuator>
+      </transmission>
   </xacro:macro>
 
 </robot>
